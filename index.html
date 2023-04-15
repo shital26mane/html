@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .shital{
+            color: deeppink;
+            text-shadow: 3px 3px 6px blue;
+            font-size: 50px;
+            font-family: Edwardian Script ITC;
+            animation-name: text;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            letter-spacing: 5px;
+        }
+        @keyframes text {
+            10%{color: red; text-shadow: 3px 3px 6px black;}
+            20%{transform: translate(200px,300px);}
+            30%{color: rgb(32, 82, 82); text-shadow: 3px 3px 6px purple;}
+            40%{transform: translateY(300px);}
+        }
+
+        .poonam{
+            height: 70px;
+            width: 100px;
+            text-shadow: 2px 2px 8px black;
+            margin-left: 500px;
+            animation-name: text1;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            position: relative;
+        }
+        .poonam h1{
+            color: deeppink;
+            font-size: 50px;
+            text-align: center;
+            font-family: Edwardian Script ITC;
+            line-height: 70px;
+        }
+        @keyframes text1 {
+            10%{left: 0px; top: 0px; transform: rotate(45deg);}
+            20%{color: blue; left: 200px; top: 0px;}
+            30%{color: red; left: 200px; top: 200px; transform: rotate(45deg);}
+            40%{left: 0px; top: 0px;}
+            
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="shital">Shital</h1>
+
+    <div class="poonam"><h1>Poonam</h1></div>
+
+    <h1 class="mansi">Mansi</h1>
+
+</body>
+</html>
